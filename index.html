@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheriting Modules</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+</head>
+
+<body>
+    <div>test</div>
+    <textarea id="area" rows="3">text</textarea>
+    <textarea id="area2" rows="3">pixxa</textarea>
+    <textarea id="area3"></textarea>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="main2.js"></script>
+    <script>
+        
+        
+//        var rect = Object.create(CreateRect).init(5, 10);
+//        
+//        var rect2 = Object.create(CreateRect).init(20, 10);
+        
+        var textAreaTest = CreateTextCounter({
+            count: 11,
+            elem: "area"
+        });
+        
+        var textAreaTest2 = CreateTextCounter({
+            count: 30,
+            elem: "area2"
+        });        
+        
+//        var textAreaTest3 = CreateTextCounter({
+//            count: 7,
+//            elem: "area3"
+//        });
+    </script>
+</body>
+
+</html>
